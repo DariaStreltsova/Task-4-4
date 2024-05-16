@@ -1,0 +1,8 @@
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.csproj.AssemblyReference.cache
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Avalonia\resources
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.AssemblyInfoInputs.cache
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.AssemblyInfo.cs
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.csproj.CoreCompileInputs.cache
+C:\Programming\C#\Task-4-4\obj\Debug\net8.0\Task-4-4.sourcelink.json
