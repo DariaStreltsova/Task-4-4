@@ -5,15 +5,17 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Task_4_4.MainWindow"
         Title="Task_4_4">
-        <Grid RowDefinitions="Auto,*"
+        <Grid ShowGridLines="True"
+        RowDefinitions="Auto,*"
         ColumnDefinitions="*, 250">
-            <ListBox Grid.Column = "0"
+            <ListBox  Grid.Column = "0"
                     Grid.Row = "1"
-                    ItemsSource = "{Bilding BlogsEntity}">
+                    ItemsSource = "{Binding BlogsEntity}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock Text = "{Bilding Article}"/>
+                                <TextBlock Text = "{Binding Article}"/>
+                                <TextBlock Text = "{Binding Text}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

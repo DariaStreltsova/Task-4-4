@@ -7,7 +7,7 @@ namespace Avalonia
     {
         public MainWindowViewModel()
         {
-            List<BlogsEntity> BlogsEntity = new List<BlogsEntity>(){
+            BlogsEntity = [
             new BlogsEntity() {
                 Article = "Lorem Ipsum", 
                 Text = "Fedir fedisfsdfshklf pon", 
@@ -17,7 +17,8 @@ namespace Avalonia
             {Article = "Майские указы", Text = "Назначен новый министр обороны!"},
             new BlogsEntity() 
             {Article = "Это конец?", Text = "С группой 9.4 занятий больше не будет"},
-        };
+            ];
         }
+        public List<BlogsEntity> BlogsEntity {get; set;}
     }
 }
