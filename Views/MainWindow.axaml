@@ -9,7 +9,7 @@
         ColumnDefinitions="*, 250">
             <ListBox Grid.Column = "0"
                     Grid.Row = "1"
-                    ItemsSource = "{Bilding BlogsEntitity}">
+                    ItemsSource = "{Bilding BlogsEntity}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>

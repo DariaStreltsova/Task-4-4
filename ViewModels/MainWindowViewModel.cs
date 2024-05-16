@@ -7,7 +7,7 @@ namespace Avalonia
     {
         public MainWindowViewModel()
         {
-            List<BlogsEntity> BlogsEntitity = new List<BlogsEntity>(){
+            List<BlogsEntity> BlogsEntity = new List<BlogsEntity>(){
             new BlogsEntity() {
                 Article = "Lorem Ipsum", 
                 Text = "Fedir fedisfsdfshklf pon", 
