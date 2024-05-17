@@ -1,5 +1,7 @@
-namespace BlogMvvmTwo.Models;
+namespace Task_4_4.Models;
 using System;
+using Avalonia.Media;
+using Avalonia.Media.Imaging;
 
 public class NewsEntity
 {

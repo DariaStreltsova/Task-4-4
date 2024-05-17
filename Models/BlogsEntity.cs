@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Avalonia
+namespace Task_4_4.Models
 {
     public class BlogsEntity
     {
