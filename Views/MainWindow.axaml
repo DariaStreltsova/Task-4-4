@@ -1,4 +1,5 @@
 <Window xmlns="https://github.com/avaloniaui"
+        xmlns:infrastructure="using:Task_4_4.Infrastructure"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:Task_4_4.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -16,20 +17,48 @@
     </Design.DataContext>
 
     <Grid ShowGridLines="True"
-        RowDefinitions="Auto,*"
-        ColumnDefinitions="*, 250">
-            <ListBox  Grid.Column = "0"
+    RowDefinitions="Auto,*"
+    ColumnDefinitions="*, 250">
+        <StackPanel Orientation = "Horizontal" Spacing="10" Grid.Row="0" Grid.Column="0" Margin = "10">
+                <Menu>Home</Menu>
+                <Menu>About</Menu>
+                <Menu>Blog's Main Topic 1</Menu>
+                <Menu>Blog's Main Topic 2</Menu>
+                <Menu>Blog's Main Topic 3</Menu>
+                <Menu>Associated</Menu>
+        </StackPanel>
+        <StackPanel Orientation = "Horizontal" HorizontalAlignment = "Right" Spacing="10" Grid.Row="0" Grid.Column="1" Margin = "0 0 10 0">
+                <Menu>RSS</Menu>
+        </StackPanel>
+        <ListBox  Grid.Column = "0"
                     Grid.Row = "1"
-                    ItemsSource = "{Binding BlogsEntity}">
+                    ItemsSource = "{Binding BlogEntities}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
                                 <TextBlock Text = "{Binding Article}"/>
-                                <TextBlock Text = "{Binding Text}"/>
+                                <TextBlock Margin = "0 10 0 0" TextWrapping="Wrap" Text = "{Binding Text}"/>
+                                <Image Margin = "0 100 0 0 " Source="{Binding ImagePath, Converter={x:Static infrastructure:BitmapValueConverter.Instance}}"  
+                                   Width="100" 
+                                   HorizontalAlignment="Center" />
+                                <ListBox  Margin = "10 0 0 0" ItemsSource="{Binding Tags}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
-            </ListBox>
-        </Grid>
+        </ListBox>
+        <ListBox  Grid.Column = "1"
+                    Grid.Row = "1"
+                    ItemsSource = "{Binding NewsEntities}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Text = "{Binding Text}"/>
+                                <TextBlock HorizontalAlignment = "Right" Text = "{Binding PublishTime}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
 
 </Window>

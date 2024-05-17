@@ -10,15 +10,15 @@ public class MainWindowViewModel : ViewModelBase
     {
         BlogEntities =
         [
-            new BlogsEntity {Article = "Заголовок 1", Text = "text 1", Tags = ["Tag11, Tag11"]},
-            new BlogsEntity {Article = "Заголовок 2", Text = "text 2", Tags = ["Tag12, Tag22"]},
-            new BlogsEntity {Article = "Заголовок 3", Text = "text 3", Tags = ["Tag13, Tag23"]}
+            new BlogsEntity {Article = "Article 1", Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus eros. Quisque ut neque condimentum ipsum eleifend euismod vel ac ligula. Vivamus urna diam, sodales eu est in, iaculis tempor nibh. Curabitur pulvinar ligula et velit faucibus imperdiet. Sed ex sem, bibendum sit amet vehicula ac, euismod at nulla. Praesent finibus augue ultrices, lobortis libero quis, lobortis ipsum. Mauris aliquam nulla porta, mattis urna non, hendrerit mi", Tags = ["Tag1, Tag2"], ImagePath = "r.jpg"},
+            new BlogsEntity {Article = "Article 2", Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus eros. Quisque ut neque condimentum ipsum eleifend euismod vel ac ligula. Vivamus urna diam, sodales eu est in, iaculis tempor nibh. Curabitur pulvinar ligula et velit faucibus imperdiet. Sed ex sem, bibendum sit amet vehicula ac, euismod at nulla. Praesent finibus augue ultrices, lobortis libero quis, lobortis ipsum. Mauris aliquam nulla porta, mattis urna non, hendrerit mi", Tags = ["Tag3, Tag4"], ImagePath = "r.jpg"},
+            new BlogsEntity {Article = "Article 3", Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus eros. Quisque ut neque condimentum ipsum eleifend euismod vel ac ligula. Vivamus urna diam, sodales eu est in, iaculis tempor nibh. Curabitur pulvinar ligula et velit faucibus imperdiet. Sed ex sem, bibendum sit amet vehicula ac, euismod at nulla. Praesent finibus augue ultrices, lobortis libero quis, lobortis ipsum. Mauris aliquam nulla porta, mattis urna non, hendrerit mi", Tags = ["Tag5, Tag6"], ImagePath = "r.jpg"},
         ];
         NewsEntities =
         [
-            new NewsEntity { Text = "news 1", PublishTime = DateTime.Now},
-            new NewsEntity { Text = "news 2", PublishTime = DateTime.Now},
-            new NewsEntity { Text = "news 3", PublishTime = DateTime.Now}
+            new NewsEntity { Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a velit eu ligula euismod porta vulputate non lacus. Nulla tortor sem, faucibus eu nulla sed, elementum aliquet arcu. Maecenas dignissim tortor sed ex imperdiet viverra. Phasellus nec arcu at tortor auctor tempor non vel purus. In id nisi a urna commodo tincidunt. Morbi vel dui sem. Aenean viverra risus ut cursus tempus.", PublishTime = DateTime.Now},
+            new NewsEntity { Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a velit eu ligula euismod porta vulputate non lacus. Nulla tortor sem, faucibus eu nulla sed, elementum aliquet arcu. Maecenas dignissim tortor sed ex imperdiet viverra. Phasellus nec arcu at tortor auctor tempor non vel purus. In id nisi a urna commodo tincidunt. Morbi vel dui sem. Aenean viverra risus ut cursus tempus.", PublishTime = DateTime.Now},
+            new NewsEntity { Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a velit eu ligula euismod porta vulputate non lacus. Nulla tortor sem, faucibus eu nulla sed, elementum aliquet arcu. Maecenas dignissim tortor sed ex imperdiet viverra. Phasellus nec arcu at tortor auctor tempor non vel purus. In id nisi a urna commodo tincidunt. Morbi vel dui sem. Aenean viverra risus ut cursus tempus.", PublishTime = DateTime.Now},
         ];
     }
     public List<BlogsEntity> BlogEntities { get; set; }
